@@ -1,5 +1,4 @@
 // SkySee — API Utility
-// Uses Open-Meteo (free, no API key required)
 
 const WEATHER_BASE = 'https://api.open-meteo.com/v1/forecast';
 const AQI_BASE = 'https://air-quality-api.open-meteo.com/v1/air-quality';
@@ -36,13 +35,12 @@ export async function reverseGeocode(lat, lon) {
   const res = await fetch(
     `${GEO_BASE}?name=&count=1&language=en&format=json&latitude=${lat}&longitude=${lon}`
   );
-  // Open-Meteo doesn't have a true reverse geocode, so we use a workaround
-  // We'll use a different approach - just return coordinates
+  
   return { name: 'Current Location', latitude: lat, longitude: lon, country: '' };
 }
 
 /**
- * Fetch weather data (current + hourly + daily)
+ * Fetch weather data
  */
 export async function fetchWeather(lat, lon) {
   const params = new URLSearchParams({
