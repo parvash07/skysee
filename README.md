@@ -2,17 +2,13 @@
 
 > A minimal, fast weather PWA built with React and Vite. 
 > 
-> [**View Live Demo**](https://your-deployment-link-here.com)
+> [**View Live Demo**](https://skysee.vercel.app/))
 
 SkySee is a frontend application that provides real-time weather data, air quality indices, and contextual clothing recommendations. It relies entirely on the free Open-Meteo API, meaning there are no API keys or rate limits to worry about during development.
 
 I built this project to focus on clean UI/UX, responsive design using native CSS custom properties, and reliable offline capabilities via a custom Service Worker.
 
 <br />
-
-<p align="center">
-  <img src="./public/skysee.jpg" width="650" alt="SkySee App Preview" />
-</p>
 
 ## Tech Stack
 
